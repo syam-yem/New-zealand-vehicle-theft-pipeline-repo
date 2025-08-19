@@ -1,0 +1,36 @@
+{
+	"name": "Dataset_for_source_config_details_from_adls_container",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Lin_ser_for_adls_gen_sink_data",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "configuration.txt",
+				"fileSystem": "configuration"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Sourcepath",
+				"type": "String"
+			},
+			{
+				"name": "directoryname",
+				"type": "String"
+			},
+			{
+				"name": "filename",
+				"type": "String"
+			}
+		]
+	}
+}

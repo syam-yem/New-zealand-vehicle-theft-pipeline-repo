@@ -1,0 +1,46 @@
+{
+	"name": "source_on_prem_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Lin_ser_for_on_prem_service_source_data",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"Sourcepath": {
+					"value": "@dataset().Sourcepath",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"directoryname": {
+				"type": "String"
+			},
+			"filename": {
+				"type": "String"
+			},
+			"Sourcepath": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directoryname",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
