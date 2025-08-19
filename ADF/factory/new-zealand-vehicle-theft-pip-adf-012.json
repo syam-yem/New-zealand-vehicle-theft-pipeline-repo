@@ -1,0 +1,9 @@
+{
+	"name": "new-zealand-vehicle-theft-pip-adf-012",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5c749d93-ec8e-46b0-9665-1c6d31141a57",
+		"tenantId": "12c5bbc4-1a5a-4389-a525-58e694e15a0a"
+	}
+}
