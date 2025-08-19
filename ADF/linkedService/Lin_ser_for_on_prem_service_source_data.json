@@ -1,10 +1,15 @@
 {
 	"name": "Lin_ser_for_on_prem_service_source_data",
 	"properties": {
+		"parameters": {
+			"Sourcepath": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "FileServer",
 		"typeProperties": {
-			"host": "C:\\Users\\syamm\\Downloads\\Azure datasets\\Vehicle theft\\Motor+Vehicle+Thefts+CSV",
+			"host": "@{linkedService().Sourcepath}",
 			"userId": "syamm",
 			"password": {
 				"type": "AzureKeyVaultSecret",
