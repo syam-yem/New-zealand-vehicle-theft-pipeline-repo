@@ -1,0 +1,24 @@
+{
+	"name": "Lin_ser_for_on_prem_service_source_data",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Users\\syamm\\Downloads\\Azure datasets\\Vehicle theft\\Motor+Vehicle+Thefts+CSV",
+			"userId": "syamm",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1_for_on_prem_password",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "on-prem-password",
+				"secretVersion": "eafba0f0035a4d0cb67153614264f9ec"
+			}
+		},
+		"connectVia": {
+			"referenceName": "Newzealand-self-hosted-integration-Runtime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
