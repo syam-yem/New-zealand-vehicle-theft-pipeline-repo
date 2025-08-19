@@ -1,0 +1,6 @@
+{
+	"name": "Newzealand-self-hosted-integration-Runtime1",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
