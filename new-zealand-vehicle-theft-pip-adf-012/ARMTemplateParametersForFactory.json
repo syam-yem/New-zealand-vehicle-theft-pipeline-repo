@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "new-zealand-vehicle-theft-pip-adf-012"
+		},
+		"Lin_ser_for_adls_gen_sink_data_accountKey": {
+			"value": ""
+		},
+		"AzureKeyVault1_for_on_prem_password_properties_typeProperties_baseUrl": {
+			"value": "https://on-prem-local-credential.vault.azure.net/"
+		},
+		"Lin_ser_for_adls_gen_sink_data_properties_typeProperties_url": {
+			"value": "https://newzealandstorageacount.dfs.core.windows.net/"
+		},
+		"Lin_ser_for_on_prem_service_source_data_properties_typeProperties_host": {
+			"value": "@{linkedService().Sourcepath}"
+		},
+		"Lin_ser_for_on_prem_service_source_data_properties_typeProperties_userId": {
+			"value": "syamm"
+		}
+	}
+}
